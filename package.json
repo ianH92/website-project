@@ -1,0 +1,23 @@
+{
+  "name": "website-project",
+  "version": "1.0.0",
+  "description": "personal-website-project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianH92/website-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianH92/website-project/issues"
+  },
+  "homepage": "https://github.com/ianH92/website-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
