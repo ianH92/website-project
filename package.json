@@ -4,8 +4,8 @@
   "description": "personal-website-project",
   "main": "app.js",
   "scripts": {
-    "start": "node ./app/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "browserify": "browserify ./app/scripts/main.js -o ./build/bundle.js",
+    "start": "npm run browserify && node ./app/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "browserify": "^16.5.1",
     "three": "^0.116.1"
   }
 }
