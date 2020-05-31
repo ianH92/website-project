@@ -1,4 +1,4 @@
-const THREE = require('three');
+import * as THREE from 'three'
 
 /**
  * Initialze a WebGL Renderer. Appends the renderer domElement to the HTML document body.
@@ -6,7 +6,7 @@ const THREE = require('three');
  * @param {number} [height] - The height of the renderer. Default value of window.innerHeight.
  * @returns {THREE.WebGLRenderer} A WebGLRenderer with the given width and height.
  */
-exports.initRenderer = (width = window.innerWidth, height = window.innerHeight) => {
+export const initRenderer = (width = window.innerWidth, height = window.innerHeight) => {
   let renderer = new THREE.WebGLRenderer();
   renderer.setSize(width, height);
   document.body.appendChild(renderer.domElement);
@@ -20,7 +20,7 @@ exports.initRenderer = (width = window.innerWidth, height = window.innerHeight) 
  * @param {number} z - The width of the cube on the z axis.
  * @param {number} cubeColor - The color of the cube.
  */
-exports.createCube = function(x, y, z, cubeColor) {
+export const createCube = function(x, y, z, cubeColor) {
   let geometry = new THREE.BoxGeometry(x, y, z);
   let material = new THREE.MeshBasicMaterial( {color: cubeColor} );
   let cube = new THREE.Mesh(geometry, material);
@@ -32,7 +32,7 @@ exports.createCube = function(x, y, z, cubeColor) {
  * @param {THREE.Object3D} object - A Three.js Object3D object to spin.
  * @param {number} rate - The rate at which to spin the object. Defaults to 0.05.
  */
-exports.spin = function(object, rate = 0.05) {
+export const spin = function(object, rate = 0.05) {
   object.rotation.x += rate;
   object.rotation.y += rate;
 }
