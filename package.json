@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/ianH92/website-project#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
